@@ -1,0 +1,100 @@
+.element-info {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.element-info-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.element-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.element-symbol {
+  font-size: 48px;
+  font-weight: 800;
+  color: #4361ee;
+  margin-bottom: 8px;
+}
+
+.element-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.element-number {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.element-details {
+  margin-bottom: 20px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f9fafb;
+}
+
+.detail-label {
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.detail-value {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.detail-value.with-tooltip {
+  border-bottom: 1px dashed #9ca3af;
+  cursor: help;
+}
+
+.element-description,
+.element-uses {
+  margin-bottom: 20px;
+}
+
+.element-description h4,
+.element-uses h4 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  color: #374151;
+}
+
+.element-description p {
+  margin: 0;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.element-uses ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.element-uses li {
+  margin-bottom: 6px;
+  color: #4b5563;
+  line-height: 1.5;
+}

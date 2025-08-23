@@ -1,0 +1,135 @@
+.quiz-selection {
+  text-align: center;
+  padding: 2rem;
+}
+
+.quiz-selection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.quiz-selection p {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.quiz-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.quiz-option {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid #e5e7eb;
+}
+
+.quiz-option:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-option.selected {
+  border-color: #4361ee;
+  background: #f8f9ff;
+}
+
+.quiz-option h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.quiz-option p {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.quiz-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.difficulty {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.quiz-meta span:not(.difficulty) {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.quiz-option.Beginner .difficulty {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.quiz-option.Intermediate .difficulty {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.quiz-option.Advanced .difficulty {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.quiz-start-actions {
+  margin-top: 2rem;
+}
+
+.start-quiz-btn {
+  background: linear-gradient(135deg, #4361ee, #3a0ca3);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+}
+
+.start-quiz-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4);
+}
+
+.start-quiz-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quiz-options {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-option {
+    padding: 1.5rem;
+  }
+
+  .quiz-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .start-quiz-btn {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+  }
+}

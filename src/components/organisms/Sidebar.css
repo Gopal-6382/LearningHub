@@ -1,0 +1,163 @@
+.sidebar {
+  background: white;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 300px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.sidebar-header h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.progress-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.progress-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.progress-value {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4361ee;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #f3f4f6;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4361ee, #4cc9f0);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.topic-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: none;
+  background: #f9fafb;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  text-align: left;
+}
+
+.topic-item:hover:not(.locked) {
+  background: #f3f4f6;
+  transform: translateY(-1px);
+}
+
+.topic-item.active {
+  background: #4361ee;
+  color: white;
+}
+
+.topic-item.active .topic-title {
+  color: white;
+}
+
+.topic-item.active .topic-description {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.topic-item.locked {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.topic-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.topic-content {
+  flex: 1;
+}
+
+.topic-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.topic-description {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+.topic-status {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.lock-icon,
+.completed-icon,
+.incomplete-icon {
+  font-size: 1rem;
+}
+
+.sidebar-actions {
+  padding: 1rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+}
+
+.sidebar-button-fullwidth {
+  width: 100%;
+}

@@ -1,0 +1,81 @@
+.control-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  font-family: sans-serif;
+}
+
+/* Panel Title */
+.control-panel-title {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: center;
+}
+
+/* Group of Sliders/Controls */
+.control-group {
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.control-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+/* Toggle / Mode Section */
+.control-mode {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 12px 0;
+  border-top: 1px solid #f3f4f6;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+/* Atom Properties List */
+.atom-properties {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual Property Row */
+.property {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #f9fafb;
+  border-radius: 6px;
+}
+
+/* Labels and Values */
+.property-label {
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.property-value {
+  font-weight: 600;
+  color: #4361ee;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0;
+  height: 0;
+}
+
+
+
+
+
